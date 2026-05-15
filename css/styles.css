@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -405,8 +406,9 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  padding: 0;
+  padding: 0 !important;
   align-items: center;
+  min-width: 0;
 }
 
 .project-media {
@@ -417,6 +419,7 @@ section {
   overflow: hidden;
   border-radius: var(--radius) 0 0 var(--radius);
   border-right: 1px solid var(--border);
+  margin: 0;
 }
 
 .project-media img {
@@ -439,10 +442,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .project-top {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1rem;
@@ -463,6 +469,8 @@ section {
   border-radius: 100px;
   font-weight: 700;
   letter-spacing: 0.1em;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .badge.live {
@@ -722,6 +730,7 @@ footer small {
     border-right: none;
     border-bottom: 1px solid var(--border);
     min-height: 250px;
+    min-width: 0;
   }
   
   .site-header {
@@ -820,6 +829,10 @@ footer small {
 
   .project-top h3 {
     font-size: 1.5rem;
+  }
+
+  .project-content {
+    padding: 2rem;
   }
 
   .skills-groups, .automation-list, .about-grid {
