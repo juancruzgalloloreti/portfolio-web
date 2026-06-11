@@ -1,6 +1,6 @@
 window.PORTFOLIO_DATA = {
   profile: {
-    name: "LOGO",
+    name: "Juan Cruz Gallo Loreti",
     location: "Buenos Aires, Argentina · Servicio global",
     tagline: "Desarrollo de software y automatizaciones profesionales para impulsar el crecimiento de tu empresa.",
     email: "juancruzgalloloreti@gmail.com",

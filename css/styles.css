@@ -242,12 +242,13 @@ section {
 
 .hero h1 {
   font-family: "Outfit", sans-serif;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(1.5rem, 5vw, 5rem);  /* bajás el max y usás vw más chico */
   line-height: 1.05;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   margin: 0 0 1.5rem;
   font-weight: 900;
   color: var(--primary);
+  white-space: nowrap;  /* fuerza una sola línea */
 }
 
 .tagline {
